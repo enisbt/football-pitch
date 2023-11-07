@@ -90,8 +90,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30d95fec93e57aa4db2568133ec38aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Ferdi
-  playerNumber: 7
+  playerName: 
+  playerNumber: 
+  team: 1
+  kitColor: {r: 0, g: 0, b: 0, a: 0}
+  kit: {fileID: 1589048566635122553}
 --- !u!1 &7137017917726945594
 GameObject:
   m_ObjectHideFlags: 0
