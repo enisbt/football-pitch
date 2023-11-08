@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public enum KitType
 {
@@ -51,6 +52,10 @@ public class Team : MonoBehaviour
             {
                 uiKitParent.GetChild(i).gameObject.SetActive(true);
                 uiKitParent.GetChild(i).GetComponent<Image>().color = secondaryColor;
+            }
+            else
+            {
+                uiKitParent.GetChild(i).gameObject.SetActive(false);
             }
         }
     }
@@ -124,5 +129,12 @@ public class Team : MonoBehaviour
     {
         teamName = teamNameTextInputField.text;
         teamNameText.text = teamName;
+    }
+
+    public void SetTeamKit(string kitName)
+    {
+        kitType = (KitType) Enum.Parse(typeof(KitType), kitName);
+        PaintOnFieldKits();
+        PaintUIKits();
     }
 }
