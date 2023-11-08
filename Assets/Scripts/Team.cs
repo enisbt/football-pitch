@@ -28,11 +28,14 @@ public class Team : MonoBehaviour
     [SerializeField] Transform uiKitParent;
     [SerializeField] GameObject settingsPanel;
 
+    TMP_InputField teamNameTextInputField;
     Player[] players = new Player[11];
 
     private void Start()
     {
+        teamNameTextInputField = settingsPanel.transform.Find("Team Name Text Input Field").GetComponent<TMP_InputField>();
         teamNameText.text = teamName;
+        teamNameTextInputField.text = teamName;
 
         FindTeamPlayers();
         PaintUIKits();
@@ -115,5 +118,11 @@ public class Team : MonoBehaviour
         PaintUIKits();
         PaintSettingsPanelKits();
         PaintOnFieldKits();
+    }
+
+    public void OnTeamNameTextChange()
+    {
+        teamName = teamNameTextInputField.text;
+        teamNameText.text = teamName;
     }
 }
