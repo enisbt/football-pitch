@@ -13,8 +13,10 @@ public class Player : MonoBehaviour
     [SerializeField] string playerName;
     [SerializeField] string playerNumber;
     [SerializeField] public PlayerTeam team;
-    [SerializeField] Color kitColor = Color.blue;
+    [SerializeField] Color primaryKitColor = Color.blue;
+    [SerializeField] Color secondaryKitColor = Color.yellow;
     [SerializeField] Image kit;
+    [SerializeField] Transform kitParent;
 
     TMP_Text numberText;
     TMP_Text nameText;
@@ -23,7 +25,6 @@ public class Player : MonoBehaviour
     {
         numberText = transform.Find("Number Text").GetComponent<TMP_Text>();
         nameText = transform.Find("Player Name Text Background").Find("Player Name Text").GetComponent<TMP_Text>();
-        kit.color = kitColor;
     }
 
     private void Update()
@@ -32,9 +33,24 @@ public class Player : MonoBehaviour
         nameText.text = playerName;
     }
 
-    public void SetColor(Color color)
+    public void SetKit(int index, Color primaryColor, Color secondaryColor)
     {
-        kitColor = color;
-        kit.color = kitColor;
+        primaryKitColor = primaryColor;
+        secondaryKitColor = secondaryColor;
+        kit.color = primaryKitColor;
+
+        for (int i = 0; i < kitParent.childCount; i++)
+        {
+            if (i == index)
+            {
+                kitParent.GetChild(i).gameObject.SetActive(true);
+                kitParent.GetChild(i).GetComponent<Image>().color = secondaryKitColor;
+            }
+            else
+            {
+                kitParent.GetChild(i).gameObject.SetActive(false);
+                kitParent.GetChild(i).GetComponent<Image>().color = secondaryKitColor;
+            }
+        }
     }
 }

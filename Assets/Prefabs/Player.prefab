@@ -395,8 +395,10 @@ MonoBehaviour:
   playerName: 
   playerNumber: 
   team: 1
-  kitColor: {r: 0, g: 0, b: 0, a: 0}
+  primaryKitColor: {r: 0, g: 0, b: 1, a: 1}
+  secondaryKitColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   kit: {fileID: 1589048566635122553}
+  kitParent: {fileID: 6751823683414572347}
 --- !u!1 &4381225199777974287
 GameObject:
   m_ObjectHideFlags: 0
