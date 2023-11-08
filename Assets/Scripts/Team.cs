@@ -35,9 +35,13 @@ public class Team : MonoBehaviour
         teamNameText.text = teamName;
 
         FindTeamPlayers();
+        PaintUIKits();
+    }
 
+    private void PaintUIKits()
+    {
         uiKitBase.color = primaryColor;
-        int kitIndex = (int) kitType;
+        int kitIndex = (int)kitType;
         for (int i = 0; i < uiKitParent.childCount; i++)
         {
             if (i == kitIndex)
@@ -62,6 +66,11 @@ public class Team : MonoBehaviour
             }
         }
 
+        PaintOnFieldKits();
+    }
+
+    private void PaintOnFieldKits()
+    {
         for (int i = 0; i < players.Length; i++)
         {
             players[i].SetKit((int)kitType, primaryColor, secondaryColor);
@@ -72,18 +81,39 @@ public class Team : MonoBehaviour
     {
         if (!settingsPanel.activeSelf)
         {
-            Transform settingsKitParent = settingsPanel.transform.Find("Kits");
-
-            for (int i = 0; i < settingsKitParent.childCount; i++)
-            {
-                settingsKitParent.GetChild(i).GetComponent<Image>().color = primaryColor;
-                settingsKitParent.GetChild(i).GetChild(0).GetComponent<Image>().color = secondaryColor;
-            }
-
-            settingsPanel.transform.Find("Primary Color").GetComponent<Image>().color = primaryColor;
-            settingsPanel.transform.Find("Secondary Color").GetComponent<Image>().color = secondaryColor;
+            PaintSettingsPanelKits();
         }
 
         settingsPanel.SetActive(!settingsPanel.activeSelf);
+    }
+
+    private void PaintSettingsPanelKits()
+    {
+        Transform settingsKitParent = settingsPanel.transform.Find("Kits");
+
+        for (int i = 0; i < settingsKitParent.childCount; i++)
+        {
+            settingsKitParent.GetChild(i).GetComponent<Image>().color = primaryColor;
+            settingsKitParent.GetChild(i).GetChild(0).GetComponent<Image>().color = secondaryColor;
+        }
+
+        settingsPanel.transform.Find("Primary Color").GetComponent<Image>().color = primaryColor;
+        settingsPanel.transform.Find("Secondary Color").GetComponent<Image>().color = secondaryColor;
+    }
+
+    public void SetPrimaryColor(Color color)
+    {
+        primaryColor = color;
+        PaintUIKits();
+        PaintSettingsPanelKits();
+        PaintOnFieldKits();
+    }
+
+    public void SetSecondaryColor(Color color)
+    {
+        secondaryColor = color;
+        PaintUIKits();
+        PaintSettingsPanelKits();
+        PaintOnFieldKits();
     }
 }
