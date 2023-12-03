@@ -7,12 +7,29 @@ public class PlayerSettingsPanel : MonoBehaviour
     [SerializeField] TMP_InputField numberInputField;
 
     Player player;
+    Transform settingsPosition;
 
-    public void SetPlayer(Player player)
+    private void Update()
     {
+        if (player != null)
+        {
+            transform.position = settingsPosition.position;
+        }
+    }
+
+    public void SetPlayer(Player player, Transform settingsPosition)
+    {
+        transform.position = settingsPosition.position;
         this.player = player;
+        this.settingsPosition = settingsPosition;
         nameInputField.text = player.playerName;
         numberInputField.text = player.playerNumber;
+    }
+
+    public void ResetPlayer()
+    {
+        player = null;
+        settingsPosition = null;
     }
 
     public void NameOnValueChange()

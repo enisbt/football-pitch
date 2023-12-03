@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -232,6 +236,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -873,6 +881,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1256,6 +1268,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1560,6 +1576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2419,6 +2439,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2894,6 +2918,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3589,6 +3617,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3690,6 +3722,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5314,6 +5350,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6352,6 +6392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -6870,6 +6914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7181,6 +7229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7402,6 +7454,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 961350315}
     m_Modifications:
+    - target: {fileID: 2803619217153383630, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: m_text
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2803619217153383630, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: m_fontSize
+      value: 44
+      objectReference: {fileID: 0}
     - target: {fileID: 4333193824534915557, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Name
       value: Player (9)
@@ -7410,6 +7470,18 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerNumber
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8095,6 +8167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8478,6 +8554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9844,6 +9924,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11234,6 +11318,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11335,6 +11423,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -11998,6 +12090,11 @@ MonoBehaviour:
           m_StringArgument: Arms
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1864252507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7273440410347454525, guid: a41a4a022b1956d4ba157fc663403459, type: 3}
+  m_PrefabInstance: {fileID: 1371501342518326141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1864252508 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 436011421528756468, guid: a41a4a022b1956d4ba157fc663403459, type: 3}
@@ -12317,6 +12414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -12913,6 +13014,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13465,6 +13570,10 @@ PrefabInstance:
       propertyPath: team
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5518071631992066935, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
+      propertyPath: playerSettingsPanel
+      value: 
+      objectReference: {fileID: 1864252507}
     - target: {fileID: 8488059488822366689, guid: 2cdc38fd00d4f68429e6caf31c5b6d40, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

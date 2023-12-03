@@ -9,7 +9,7 @@ public enum PlayerTeam
     TeamB,
 }
 
-public class Player : MonoBehaviour, IPointerClickHandler
+public class Player : MonoBehaviour, IPointerClickHandler, IDragHandler
 {
     [SerializeField] public string playerName;
     [SerializeField] public string playerNumber;
@@ -18,6 +18,7 @@ public class Player : MonoBehaviour, IPointerClickHandler
     [SerializeField] Color secondaryKitColor = Color.yellow;
     [SerializeField] Image kit;
     [SerializeField] Transform kitParent;
+    [SerializeField] RectTransform topBar;
     [SerializeField] Transform leftSettingsPosition;
     [SerializeField] Transform rightSettingsPosition;
     [SerializeField] GameObject playerSettingsPanel;
@@ -26,6 +27,7 @@ public class Player : MonoBehaviour, IPointerClickHandler
     TMP_Text nameText;
 
     bool isSettingsPanelActive = false;
+    bool isDragging;
 
     private void Start()
     {
@@ -74,19 +76,40 @@ public class Player : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (isDragging)
+        {
+            isDragging = false;
+            return;
+        }
+
         if (isSettingsPanelActive)
         {
             playerSettingsPanel.SetActive(false);
+            playerSettingsPanel.GetComponent<PlayerSettingsPanel>().ResetPlayer();
             isSettingsPanelActive = false;
             return;
         }
 
         isSettingsPanelActive = true;
         playerSettingsPanel.SetActive(false);
-        playerSettingsPanel.GetComponent<PlayerSettingsPanel>().SetPlayer(this);
+        playerSettingsPanel.GetComponent<PlayerSettingsPanel>().SetPlayer(this, rightSettingsPosition);
         playerSettingsPanel.transform.Find("Number Input Field").GetComponent<TMP_InputField>().text = playerNumber;
         playerSettingsPanel.transform.Find("Name Input Field").GetComponent<TMP_InputField>().text = playerName;
-        playerSettingsPanel.transform.position = rightSettingsPosition.position;
         playerSettingsPanel.SetActive(true);
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        isDragging = true;
+        transform.position = Input.mousePosition;
+        ClampToPitch();
+    }
+
+    private void ClampToPitch()
+    {
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        float topBound = Screen.height - topBar.sizeDelta.y;
+        float y = Mathf.Clamp(rectTransform.position.y, 0, topBound + rectTransform.sizeDelta.y / 2);
+        rectTransform.position = new Vector3(rectTransform.position.x, y, rectTransform.position.z);
     }
 }
