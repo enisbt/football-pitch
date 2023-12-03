@@ -100,6 +100,10 @@ MonoBehaviour:
   hueImage: {fileID: 567257616157035119}
   saturationValueImage: {fileID: 5400375286533044596}
   hueSlider: {fileID: 7392208129820164631}
+  otherColorPickers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &380763582307499213
 GameObject:
   m_ObjectHideFlags: 0
